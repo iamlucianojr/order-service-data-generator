@@ -4,6 +4,11 @@ Generates a large JSON object full of fake data for simulating the backend of a 
 
 Used to simulate a REST / GraphQL backend in [order-app](https://github.com/luciano-jr/order-app).
 
+## Install
+```
+yarn add data-generator-order-app
+```
+
 ## Usage
 
 ```js
