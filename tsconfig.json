@@ -1,0 +1,8 @@
+{
+    "compilerOptions": {
+        "outDir": "lib",
+        "rootDir": "src"
+    },
+    "exclude": ["**/*.spec.ts", "**/*.spec.tsx", "**/*.spec.js"],
+    "include": ["src"]
+}
