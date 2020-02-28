@@ -1,6 +1,6 @@
 {
   "name": "data-generator-order-app",
-  "version": "0.1.2",
+  "version": "0.1.4",
   "homepage": "https://github.com/luciano-jr/order-app/",
   "bugs": {
     "url": "https://github.com/luciano-jr/order-app/issues"
@@ -8,11 +8,12 @@
   "license": "MIT",
   "main": "./lib/index.js",
   "scripts": {
-    "build": "yarn run build-cjs && yarn run build-esm",
+    "build": "npm run build-cjs && npm run build-esm",
     "build-cjs": "rimraf ./lib && tsc",
     "build-esm": "rimraf ./esm && tsc --outDir esm --module es2015",
     "watch": "tsc --outDir esm --module es2015 --watch",
-    "prepare" : "npm run build"
+    "prepare": "npm run build",
+    "postinstall": "npm run build"
   },
   "dependencies": {
     "date-fns": "~1.29.0",
@@ -20,7 +21,8 @@
   },
   "devDependencies": {
     "cross-env": "^5.2.0",
-    "rimraf": "^2.6.3"
+    "rimraf": "^2.6.3",
+    "typescript": "^3.8.2"
   },
   "description": "Generates a large JSON object full of fake data for simulating the backend of a cafe/restaurant shop.",
   "directories": {
