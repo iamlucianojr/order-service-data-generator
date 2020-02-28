@@ -2,12 +2,12 @@
 
 Generates a large JSON object full of fake data for simulating the backend of a cafe/restaurant shop. 
 
-Used to simulate a REST / GraphQL backend in [order-service](https://github.com/luciano-jr/order-service).
+Used to simulate a REST / GraphQL backend in [order-app](https://github.com/luciano-jr/order-app).
 
 ## Usage
 
 ```js
-import generateData from 'data-generator-order-service';
+import generateData from 'data-generator-order-app';
 
 const data = generateData();
 // now do whatever you want with the data...
